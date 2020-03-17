@@ -1,0 +1,1 @@
+export url = "https://www.rijksmuseum.nl/api/nl/agenda/2020-3-15?key=yW6uq3BV&format=json"

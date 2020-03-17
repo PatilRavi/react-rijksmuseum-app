@@ -1,0 +1,146 @@
+h1, p {
+  font-family: Lato;
+}
+
+.container {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.bg-img { 
+  background: url(https://rijks-qms-frontend.azureedge.net/assets/e89bc73e-ccf9-4aed-8272-7c87e98ebaea?w=1200&c=0aba472848ee8cf4a2353227295ff3b2f621b266dbb950341b8aa924b5ec6e62) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+*{
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  font-family: Lato;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.button{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.button a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.heading{
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+.event-date-nav{
+  background-color: #2271bb;
+  padding: 15px 0;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.pull-left{
+  float: left;
+}
+
+.col-xs-4{
+  width: 33.33%;
+}
+
+.col-xs-6{
+  width: 50%;
+}
+
+.col-xs-8{
+  width: 66.66%;
+}
+
+.col-xs-12{
+  width: 100%;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.event-card{
+  padding: 30px 10px;
+  border-bottom: 1px solid #ece8e8;
+}
+
+.padding-top-btm{
+  padding: 10px 0;
+}
+
+.nav-arrow{
+  padding: 10px 15px;
+  margin: 1px;
+  text-align: center;
+  background-color: #536baf;
+}
+
+.align-item-center{
+  align-items: center;
+}
