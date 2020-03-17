@@ -19,7 +19,6 @@ export default ({ event }) => {
           <div className="padding-top-btm">{event.lang}</div>
         </div>
       </div>
-      {console.log(event)}
     </div>
   );
 };

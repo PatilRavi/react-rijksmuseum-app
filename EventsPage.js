@@ -33,17 +33,34 @@ class EventsPage extends Component {
   };
 
   changeDateHandler = e => {
+    let tempDate = this.state.selectedDate;
+    // console.log(tempDate);
+    // let tempDay = parseInt(tempDate.split("-")[2]);
+    let currentDate;
     if (e === "pre") {
-    } else {
+      currentDate = tempDate.replace(
+        /..$/,
+        parseInt(tempDate.split("-")[2]) - 1
+      );
       this.setState({
         ...this.state,
-        selectedDate: "2020-03-18"
+        selectedDate: currentDate
+      });
+    } else {
+      currentDate = tempDate.replace(
+        /..$/,
+        parseInt(tempDate.split("-")[2]) + 1
+      );
+      this.setState({
+        ...this.state,
+        selectedDate: currentDate
       });
     }
   };
 
   componentDidMount() {
     let selectedDate = new Date().toISOString().split("T")[0];
+    // console.log("didMount");
     this.getEventDetails(selectedDate);
   }
 
